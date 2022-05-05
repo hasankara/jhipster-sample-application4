@@ -1,0 +1,12 @@
+entity Region {
+	
+	regionName String
+}
+
+entity Country {
+	countryName String
+}
+    
+relationship OneToOne {
+	Country{region} to Region
+}
